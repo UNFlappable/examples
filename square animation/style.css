@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(79, 94, 94); */
+
+}
+.square{
+    /* border: 2px solid red; */
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+   /* display: flex;
+   justify-content: center;
+   text-align: center; */
+    animation-name: speed;
+    animation-duration: 7s;
+    
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    /* background-color: rgb(213, 139, 0); */
+    background-image: url(../IMG/18679.jpg);
+    background-position: center;
+    background-size: cover ;
+    position: relative;
+    
+    
+}
+
+.pota{
+    width: 250px;
+    height: 400px;
+   
+    background-image: url(../IMG/kindpng_32906.png);
+    background-position: center;
+    background-size: cover;
+ 
+    
+
+}
+/* translate(60px,-50px)
+translate(100px,-85px)
+translate(200px,-110px)
+translate(300px,-120px)
+translate(300px,0px)
+translate(0,0) */
+
+
+@keyframes speed {
+     20%{
+      
+        transform:translate(60px,-50px) rotate(300deg);
+        
+    }
+    40%{
+        transform:translate(100px,-85px)rotate(600deg);
+    }
+    50%{
+        transform: translate(200px,-110px)rotate(900deg)
+    }
+
+    60%{
+        transform: translate(300px,-120px)rotate(1200deg)
+    }
+    80%
+    {transform: translate(300px,0px)
+        rotate(700deg);}
+    100%
+    {transform: 
+        translate(0,0)
+        rotate(700deg);}
+}
