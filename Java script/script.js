@@ -68,9 +68,11 @@ if (average11>=65000) {console.log("ajsdn");}
 console.log(average11);
 console.log(salaries);
 
+const h2 =document.querySelector("h2")
+const input =document.querySelector("input")
+
+document.addEventListener("keydown",run=>console.log(run.key))
+document.querySelector("input").addEventListener("onclick",run=>console.log(run.value))
 
 
-
-
-
-
+console.log(h2.textContent);
