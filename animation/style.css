@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ekran{
+    
+    height: 400px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ball1{
+    width: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    
+    position: absolute;
+    background-color: rgb(240, 238, 235);
+    animation-name: left-ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    
+
+    
+}
+
+.ball2{
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 2px solid red;
+    position: relative;
+    background-color: rgb(90, 65, 27);
+    z-index: 2;
+    animation: middle-ball;
+    
+    
+}
+
+.ball3{
+    width: 20px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    
+    position: absolute;
+    background-color: rgb(240, 238, 235);
+    animation-name: right-ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 300ms;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    animation-delay: 2s;
+}
+
+
+
+
+@keyframes left-ball{
+    
+
+    50%{
+        transform: translate(-150px);
+        width: 50px;
+        aspect-ratio: 3/1;
+        background-color: blue;
+
+    }
+    
+    100%{
+        transform: translate(0px);
+        
+    }
+
+
+
+}
+
+
+@keyframes right-ball{
+    35%{
+        
+    }
+
+    50%{
+        transform: translate(150px);
+        width: 50px;
+        aspect-ratio: 3/1;
+        background-color: blue;
+    }
+    
+    100%{
+        transform: translate(0px);
+        
+    }
+
+
+
+}
+
+
+@keyframes middle-ball {
+        
+   0%{transform: translateY((-200px)) ;}
+    
+
+    50%{
+        
+    }
+    
+    100%{
+        transform: translateY(0px);
+        
+    }
+
+
+
+}
