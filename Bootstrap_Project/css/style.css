@@ -1,0 +1,52 @@
+:root{
+    --primary-color:#bc6c25;
+    --secondary-color:#4d3822;
+    --hover-color:#e76f51;
+
+}
+
+
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    
+}
+
+/*! NAVBAR */
+
+.navbar{
+    background-color: transparent !important;
+}
+
+.navbar .container{
+    background-color: rgba(0, 0, 0, 0.519) !important;
+}
+
+
+
+.navbar-nav{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+ .nav-link{
+    color:  white !important;
+}
+ .nav-link:hover{
+    color: var(--primary-color) !important;
+}
+
+/*! CAROUSEL */
+
+
+.carousel-caption{
+    border: 5px solid blue !important;
+
+    bottom: 40%;
+}
+
+.carousel-caption .btn{
+    background-color: #bc6c25;
+    border:none
+}
