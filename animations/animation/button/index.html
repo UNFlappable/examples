@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harfler En Sağdan Kayarak Oluşturuluyor</title>
+<style>
+.text-container {
+    position: relative;
+    width: 200px; /* İhtiyaca göre ayarlayabilirsiniz */
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="text-container">
+    <span class="text">h</span>
+    <span class="text">a</span>
+    <span class="text">r</span>
+    <span class="text">u</span>
+    <span class="text">n</span>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var textElements = document.querySelectorAll('.text');
+    var delay = 10; // Her harfin gösterim aralığı (ms)
+    var duration = 10; // Her harfin gösterim süresi (ms)
+    var index = textElements.length - 1;
+
+    function showText() {
+        if (index >= 0) {
+            textElements[index].style.opacity = "1"; // Harfi görünür yap
+            index--;
+            setTimeout(showText, delay);
+        }
+    }
+
+    setTimeout(showText, duration);
+});
+</script>
+
+</body>
+</html>
