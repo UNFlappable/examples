@@ -96,6 +96,17 @@ btn1.onclick =() =>{
         alert('Metin başarıyla kopyalandı!');
     })}
    
-   
-   
-    
+  
+
+    const deleteButton = document.getElementById("btn-dlt");
+const itemList = document.querySelector(".item-list ul");
+deleteButton.onclick = (e) => {
+  const items = itemList.querySelectorAll("li");
+  if (items.length > 0) {
+    items[items.length-1].remove();
+  }
+  if (items.length === 0) {
+    alert("silinecek oge birakmadin ki kardes");
+  }
+};
+ 
