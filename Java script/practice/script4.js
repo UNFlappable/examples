@@ -127,3 +127,66 @@ var allProducts = [
   
   
   // <--------------------  filter  product  ------------------------->
+
+
+  arrx= [1,2,3,4]
+
+  const [,,x,y]   =arrx
+
+  
+console.log(x);
+console.log(y);
+
+const greet=({name,age})=>{
+  return `${name} ${age}`
+
+}
+
+const person={name:"ant",age:30}
+const greeting= greet(person)
+
+console.log(greeting);
+
+
+console.log([]===false
+  
+);
+
+const nObj = {
+  name: "Clarusway",
+  path: "Fullstack",
+  module: {
+    frontend: {
+      m1: ["Html", "Css", "Js", "Bootstrap"],
+      m2: ["React", "Tailwindcss", "Mui", "Ts"],
+    },
+    backend: ["Node", "Express"]
+  }
+}
+
+const {module : { frontend:{m2}}} = nObj;
+
+// const reactDev= nObj.module.frontend.m2
+
+// const { reactDev : m2 } = nObj.module.frontend;
+
+
+// console.log(reactDev);
+console.log(m2);
+
+
+// const products = data.products
+
+let myfavorite= ["x","y","z"]
+myfavoritex=myfavorite.some((x)=>x==="x")
+console.log(myfavoritex);
+
+
+let myyfavoritex=[]
+
+
+console.log(myyfavoritex);
+
+myyfavoritex=myyfavoritex ?"y":"z"
+
+console.log(myyfavoritex);
