@@ -148,9 +148,7 @@ const greeting= greet(person)
 console.log(greeting);
 
 
-console.log([]===false
-  
-);
+
 
 const nObj = {
   name: "Clarusway",
