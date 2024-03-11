@@ -20,7 +20,7 @@ const getData = () => {
         return res.json()})
 
     .then((data) => {
-      console.log(data);
+        
       data.forEach((data) => {
         cardDiv.innerHTML += `
             <div class="col-12 col-sm-6 col-lg-4">
@@ -30,9 +30,10 @@ const getData = () => {
         </div>
                        
             `;
+   
       });
     }).catch((err)=>{
-        console.error("Error fetching data:", err)
+        console.log("Error fetching data:", err)
     })
 }
 
@@ -72,14 +73,10 @@ const getNewImages = () => {
 
 //!  1 sn sonra  removeLoading function çalıştırır  o functionda içerinde getdata function oldugu için yukarıda yazdıgımız data çagırma işlemini yapar. yanı kısaca getData() işlemini 1 sn sonra yapıyoruz süreyi kendiniz belirleyebilirsiniz
 
-setTimeout(removeLoading, 1000);
+setTimeout(removeLoading, 2000);
 
 
 
 btn.addEventListener("click", getNewImages);
 
 
-
-
-
- 
